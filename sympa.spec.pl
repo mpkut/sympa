@@ -84,6 +84,10 @@ Group:    System Environment/Daemons
 URL:      http://www.sympa.org/
 Source:   http://www.sympa.org/distribution/%{name}-%{version}.tar.gz
 
+%if 0%{?rhel} >= 7
+%define	use_systemd 1
+%endif
+
 Requires: smtpdaemon
 @REQUIRES@
 Requires: webserver
