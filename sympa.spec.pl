@@ -76,7 +76,7 @@ __END__
 
 Name:     sympa
 Version:  @VERSION@
-Release:  1%{?dist}
+Release:  1%{?dist}.utlists
 Summary(fr): Sympa est un gestionnaire de listes électroniques
 Summary:  Sympa is a powerful multilingual List Manager
 License:  GPL
