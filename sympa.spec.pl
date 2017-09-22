@@ -170,7 +170,9 @@ fi
 %attr(-,sympa,sympa) %{_libexecdir}/sympa/familyqueue
 %attr(-,sympa,sympa) %{_libexecdir}/sympa/queue
 %attr(-,root,sympa) %{_libexecdir}/sympa/sympa_newaliases-wrapper
-%attr(-,sympa,sympa) %{_libexecdir}/sympa/sympa_smtpc
+#%attr(-,sympa,sympa) %{_libexecdir}/sympa/sympa_smtpc
+# (UT Lists) 6.2.0 Makefile installs this in /usr/bin
+%attr(-,sympa,sympa) %{_bindir}/sympa_smtpc
 %attr(-,sympa,sympa) %{_libexecdir}/sympa/sympa_soap_server-wrapper.fcgi
 %{_libexecdir}/sympa/sympa_soap_server.fcgi
 %attr(-,sympa,sympa) %{_libexecdir}/sympa/wwsympa-wrapper.fcgi
